@@ -5,9 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    if: ${{ !github.event.issue.pull_request && github.event.issue.number == 1 }}
-    runs-on: ubuntu-latest
+  build
 
     steps:
       - uses: actions/checkout@v3
